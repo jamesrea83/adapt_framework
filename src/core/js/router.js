@@ -123,6 +123,7 @@ define([
                 var startController = Adapt.course.get('_start');
 
                 if (startController._isEnabled == true && startController._isMenuDisabled == true) {
+                    Adapt.router.set('_canNavigate', true, { pluginName: 'adapt' });
                     return;
                 }
             }
